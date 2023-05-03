@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+        #hand{
+            font-size:50px;
+            border: double 5px white;
+            padding-top: 35px;
+            padding-bottom: 35px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-radius: 50%;
+            margin: 3px;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body onload="myFunction()">
+    
+    <h1>Rock Paper Scissors</h1><br>
+    <div style="display:grid;grid-template-columns:150px 150px 150px">
+    <span id="hand" onclick="stone()">&#9994;</span>
+    <span  id="hand" onclick="paper()">&#9995;</span>
+    <span  id="hand" onclick="sesor()">&#9996;</span>
+    </div>
+
+    <div>
+        <h2 id="demo"></h2>
+        <span  id="you"></span> <span id="computer"></span>
+           
+    </div>
+    <p>Win : <span id="countw"></span> Losses : <span id="countl"></span> Ties : <span id="countt"></span></p>
+
+    <button type="button" onClick="window.location.reload()">
+        Reset Everything
+     </button>
+</body>
+</html>
